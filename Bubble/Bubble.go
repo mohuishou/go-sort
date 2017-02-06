@@ -1,8 +1,10 @@
-//Package bubble 冒泡排序
+//Package bubble 冒泡排序（稳定排序）
 package bubble
 
 // SortInt int数组排序
-func SortInt(a []int) []int {
+func SortInt(a []int) ([]int, int) {
+	//交换次数，计数
+	n := 0
 
 	aLen := len(a)
 
@@ -16,6 +18,8 @@ func SortInt(a []int) []int {
 				//交换两个变量的值，无需引入临时变量
 				a[j], a[j+1] = a[j+1], a[j]
 
+				n++
+
 				//有交换，flag=1
 				flag = 1
 			}
@@ -28,5 +32,5 @@ func SortInt(a []int) []int {
 
 	}
 
-	return a
+	return a, n
 }
