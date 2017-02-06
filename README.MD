@@ -5,7 +5,7 @@
 
 - [x] 冒泡排序
 - [x] 插入排序
-- [x] shell排序
+- [ ] shell排序
 
 ## Author
 
