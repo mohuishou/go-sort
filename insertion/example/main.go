@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"../"
+	"github.com/mohuishou/go-sort/insertion"
 )
 
 func main() {
